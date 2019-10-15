@@ -1,0 +1,31 @@
+.home-navbar {
+  top: 30px !important;
+  right: 50px !important;
+  left: 50px !important;
+  background-color: $base-light-grey; // change to global variable
+  opacity: 0.9;
+  padding: 0 !important;
+  a {
+    color: #072942;
+  }
+
+  .nav-link {
+    font-size: 25px;
+  }
+}
+
+.navbar-nav {
+  flex: auto;
+  justify-content: space-around;
+}
+
+.nav-item {
+  flex-grow: 1;
+  transition: ease 0.5s;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0.2rem ;
+  &:hover {
+    background-color: white;
+  }
+}
