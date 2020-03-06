@@ -1,31 +1,42 @@
 #home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), image-url('main_background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), image-url('main_background.jpg');
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 .home-content {
-  margin-top: 80px;
+  margin: 80px 0 0 0;
+  padding: 30px;
 }
 
 #home-title {
   color: $base-light-grey;
-  width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h2 {
+    padding: 20px;
+    font-size: 40px;
+    background-color: $base-dark-blue;
+  }
+}
+
+.skewed {
+  transform: skew(0, 5deg);
 }
 
 #home-text {
-  padding: 30px;
   background-color: $base-light-grey;
   border-radius: 4px;
-  width: 70vw;
-  margin: 30px;
-
+  margin-top: 40px;
+  padding: 10px;
+  opacity: 0.9;
   p {
     font-size: 22px;
     text-align: center;
